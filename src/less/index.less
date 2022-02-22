@@ -1,0 +1,100 @@
+/* 清除触摸高亮 */
+* {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+input {
+  -webkit-appearance: none;
+}
+img,
+a {
+  -webkit-touch-callout: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+div {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+em,
+i {
+  font-style: normal;
+}
+textarea {
+  resize: none;
+}
+body {
+  width: 100%;
+
+  background: url(../assets/bg.9ca22cf.jpg);
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .headbar {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 833px) and (max-width: 1200px) {
+  .xs-header {
+    display: block;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  // .headbar {
+  //   display: none;
+  // }
+  .nav {
+    display: none;
+  }
+  .login {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    display: none;
+  }
+  .itemicon {
+    display: inline-block !important;
+  }
+  .main {
+    width: 94% !important;
+    margin: 120px auto 150px !important;
+  }
+  .searchBox {
+    width: 94% !important;
+    position: relative;
+  }
+  .hotSearch {
+    margin: 0 auto;
+  }
+  .content {
+    width: 90%;
+  }
+  .top > span {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
